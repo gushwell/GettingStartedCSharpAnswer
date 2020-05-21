@@ -10,11 +10,11 @@ namespace Chap05
             {
                 var line = Console.ReadLine();
                 var n = int.Parse(line);
+                Console.WriteLine(n);
                 if (n < 0)
                 {
                     break;
                 }    
-                Console.WriteLine(n);
             }
         }
     }
