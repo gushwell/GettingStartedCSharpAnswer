@@ -41,14 +41,22 @@ namespace Chap15_02
                 var line = Console.ReadLine();
                 if (int.TryParse(line, out var count))
                 {
-                    if (count != 0) {
+                    if (count == 0)
+                    {
+                        Console.WriteLine("0は入力できません");
+                    }
+                    else
+                    {
                         var ans = total / count;
                         Console.WriteLine(ans);
                         Console.WriteLine("正常終了");
                         break;
                     }
                 }
-                Console.WriteLine("入力した値が正しくありません.再度入力してください");
+                else
+                {
+                    Console.WriteLine("入力した値が正しくありません.再度入力してください");
+                }
             }
         }
     }

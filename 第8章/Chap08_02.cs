@@ -17,7 +17,7 @@ namespace Chap08_02
     static class BmiCalculator
     {
         // Q2-1 staticキーワードでGetBmiを静的メソッドにする
-        public static double GetBmi(double height, double weight)
+        public static double GetBmi(int height, int weight)
         {
             var metersTall = height / 100.0;
             var bmi = weight / (metersTall * metersTall);
